@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="la6-Bj-Qcg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMr-BF-j3V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ta9-SQ-8Gv">
+            <objects>
+                <tabBarController id="zMr-BF-j3V" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XCh-7L-6Mz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="Downriver"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Z7c-Ih-fza" kind="relationship" relationship="viewControllers" id="3BE-IX-oQb"/>
+                        <segue destination="la6-Bj-Qcg" kind="relationship" relationship="viewControllers" id="nx8-1O-JGz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mkw-dj-5NP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3181" y="1036"/>
+        </scene>
         <!--Plano Alimentar-->
         <scene sceneID="QoN-Lx-3wS">
             <objects>
                 <navigationController id="la6-Bj-Qcg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Plano Alimentar" image="diet" id="K1N-5h-8yo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K3O-O5-zEq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="Downriver"/>
                         <textAttributes key="titleTextAttributes">
@@ -42,7 +63,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RefeicaoTableViewCell" id="jy1-w6-mbF" customClass="RefeicaoTableViewCell" customModule="LearningTask_10_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="104"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jy1-w6-mbF" id="Jlr-Ow-f0R">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
@@ -146,18 +167,72 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8a-Q5-IeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-984" y="613"/>
+            <point key="canvasLocation" x="-984" y="461"/>
+        </scene>
+        <!--Treinos-->
+        <scene sceneID="rB6-Gn-azb">
+            <objects>
+                <navigationController id="Z7c-Ih-fza" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Treinos" image="workout" id="bPJ-TB-Zir"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ntx-ff-NTS">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Downriver"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cfD-3O-Yrz" kind="relationship" relationship="rootViewController" id="j43-Rh-s93"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCO-Sz-y0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1920" y="1604"/>
+        </scene>
+        <!--Treinos-->
+        <scene sceneID="t0R-cA-5BE">
+            <objects>
+                <tableViewController id="cfD-3O-Yrz" customClass="TreinosViewController" customModule="LearningTask_10_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uaL-yJ-RTs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="q9f-Ln-oGd">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q9f-Ln-oGd" id="kVA-nc-WbX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cfD-3O-Yrz" id="qpP-rH-Hvm"/>
+                            <outlet property="delegate" destination="cfD-3O-Yrz" id="BFo-Uc-Sbx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Treinos" id="4Wr-YT-KcV">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="NWA-6R-AGd"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="na7-e0-T0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-984" y="1604"/>
         </scene>
         <!--Nova Refeicao View Controller-->
         <scene sceneID="NI0-Pf-eEp">
             <objects>
                 <viewController id="Jgz-gz-aBv" customClass="NovaRefeicaoViewController" customModule="LearningTask_10_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lav-H5-G0A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JfZ-eP-etL" userLabel="Container Stack View">
-                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="790"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="JDV-ct-skN" userLabel="Header Stack View">
                                         <rect key="frame" x="0.0" y="16" width="414" height="328"/>
@@ -280,7 +355,7 @@
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="32" bottom="32" trailing="32"/>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qJo-9S-uPY" userLabel="Ingredientes Table View">
-                                        <rect key="frame" x="0.0" y="344" width="414" height="358"/>
+                                        <rect key="frame" x="0.0" y="344" width="414" height="350"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="bf7-4c-3Sg" customClass="DefaultTableSectionHeaderView" customModule="LearningTask_10_2" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
@@ -290,7 +365,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view key="tableFooterView" contentMode="scaleToFill" id="1f1-lU-mp6" userLabel="Table Footer View">
-                                            <rect key="frame" x="0.0" y="235.5" width="414" height="72"/>
+                                            <rect key="frame" x="0.0" y="241.5" width="414" height="72"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsz-r5-i6D">
@@ -318,7 +393,7 @@
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IngredienteTableViewCell" id="GmC-MO-QSi" customClass="IngredienteTableViewCell" customModule="LearningTask_10_2" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="113.5" width="414" height="104"/>
+                                                <rect key="frame" x="0.0" y="119.5" width="414" height="104"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GmC-MO-QSi" id="q7t-b0-Sp7">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
@@ -402,7 +477,7 @@
                                         </connections>
                                     </tableView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0A-yj-DsZ" userLabel="Footer Stack View">
-                                        <rect key="frame" x="0.0" y="702" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="694" width="414" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXT-dF-AI5">
                                                 <rect key="frame" x="32" y="16" width="350" height="48"/>
@@ -447,21 +522,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nup-U4-umE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-984" y="1422"/>
+            <point key="canvasLocation" x="-10" y="822"/>
         </scene>
         <!--Novo Ingrediente View Controller-->
         <scene sceneID="EtB-ge-ID2">
             <objects>
                 <viewController id="18i-73-wjo" customClass="NovoIngredienteViewController" customModule="LearningTask_10_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nap-bU-mQj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3mZ-Ez-64j" userLabel="Container Stack View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fx7-5d-1sg" userLabel="Header Stack View">
-                                        <rect key="frame" x="0.0" y="60" width="414" height="240"/>
+                                        <rect key="frame" x="0.0" y="64" width="414" height="240"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Novo Ingrediente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aer-6h-DDH" userLabel="Título Label">
                                                 <rect key="frame" x="32" y="16" width="350" height="24"/>
@@ -549,10 +624,10 @@
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="32" bottom="32" trailing="32"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpQ-BS-o2r" userLabel="Padding View">
-                                        <rect key="frame" x="0.0" y="300" width="414" height="446"/>
+                                        <rect key="frame" x="0.0" y="304" width="414" height="438"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYW-fX-0EK" userLabel="Footer Stack View">
-                                        <rect key="frame" x="0.0" y="746" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="742" width="414" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2g-z1-kuO">
                                                 <rect key="frame" x="32" y="16" width="350" height="48"/>
@@ -593,7 +668,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iU2-4L-x9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-984" y="2269"/>
+            <point key="canvasLocation" x="906" y="822"/>
         </scene>
         <!--Detalhes da Refeição-->
         <scene sceneID="Q4S-eS-0Ex">
@@ -605,7 +680,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IngredienteTableViewCell" id="V24-xb-lk8" customClass="IngredienteTableViewCell" customModule="LearningTask_10_2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="104"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V24-xb-lk8" id="eDa-zw-FYj">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
@@ -693,13 +768,19 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0h-s6-SVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="743"/>
+            <point key="canvasLocation" x="-10" y="123"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="bf7-4c-3Sg">
+            <size key="intrinsicContentSize" width="0.0" height="64"/>
+        </designable>
+    </designables>
     <resources>
-        <image name="arrow.forward" catalog="system" width="128" height="98"/>
+        <image name="arrow.forward" catalog="system" width="128" height="95"/>
         <image name="diet" width="36" height="36"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="workout" width="36" height="36"/>
         <namedColor name="Downriver">
             <color red="0.075000002980232239" green="0.27099999785423279" blue="0.4309999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -710,7 +791,7 @@
             <color red="0.9649999737739563" green="0.97299998998641968" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
