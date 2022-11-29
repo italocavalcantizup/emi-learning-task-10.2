@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E03066C2934F0C50019DA53 /* TreinoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03066B2934F0C50019DA53 /* TreinoViewCell.swift */; };
+		3E0306702934F7E60019DA53 /* DetalhesTreinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03066F2934F7E60019DA53 /* DetalhesTreinoViewController.swift */; };
+		3E0306722934FD5A0019DA53 /* ExercicioViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0306712934FD5A0019DA53 /* ExercicioViewCell.swift */; };
+		3E0306762934FF8E0019DA53 /* NovoExercicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0306752934FF8E0019DA53 /* NovoExercicioViewController.swift */; };
+		3E0306782935019E0019DA53 /* NovoTreinoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0306772935019E0019DA53 /* NovoTreinoViewController.swift */; };
 		3E565038292E9305002CE866 /* TreinosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E565037292E9305002CE866 /* TreinosViewController.swift */; };
 		58089E5D289C356A001F8607 /* Treino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58089E5C289C356A001F8607 /* Treino.swift */; };
 		58089E5F289C35AB001F8607 /* TreinosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58089E5E289C35AB001F8607 /* TreinosAPI.swift */; };
@@ -32,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E03066B2934F0C50019DA53 /* TreinoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoViewCell.swift; sourceTree = "<group>"; };
+		3E03066F2934F7E60019DA53 /* DetalhesTreinoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesTreinoViewController.swift; sourceTree = "<group>"; };
+		3E0306712934FD5A0019DA53 /* ExercicioViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercicioViewCell.swift; sourceTree = "<group>"; };
+		3E0306752934FF8E0019DA53 /* NovoExercicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoExercicioViewController.swift; sourceTree = "<group>"; };
+		3E0306772935019E0019DA53 /* NovoTreinoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoTreinoViewController.swift; sourceTree = "<group>"; };
 		3E565037292E9305002CE866 /* TreinosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinosViewController.swift; sourceTree = "<group>"; };
 		58089E5C289C356A001F8607 /* Treino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treino.swift; sourceTree = "<group>"; };
 		58089E5E289C35AB001F8607 /* TreinosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinosAPI.swift; sourceTree = "<group>"; };
@@ -69,6 +79,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E03066D2934F7900019DA53 /* DetalhesTreino */ = {
+			isa = PBXGroup;
+			children = (
+				3E03066F2934F7E60019DA53 /* DetalhesTreinoViewController.swift */,
+				3E03066E2934F7980019DA53 /* View */,
+			);
+			path = DetalhesTreino;
+			sourceTree = "<group>";
+		};
+		3E03066E2934F7980019DA53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E0306712934FD5A0019DA53 /* ExercicioViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E0306732934FF5C0019DA53 /* NovoTreino */ = {
+			isa = PBXGroup;
+			children = (
+				3E0306772935019E0019DA53 /* NovoTreinoViewController.swift */,
+			);
+			path = NovoTreino;
+			sourceTree = "<group>";
+		};
+		3E0306742934FF6D0019DA53 /* NovoExercicio */ = {
+			isa = PBXGroup;
+			children = (
+				3E0306752934FF8E0019DA53 /* NovoExercicioViewController.swift */,
+			);
+			path = NovoExercicio;
+			sourceTree = "<group>";
+		};
 		3E565035292E92EF002CE866 /* ListaTreinos */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +124,7 @@
 		3E565036292E92FA002CE866 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E03066B2934F0C50019DA53 /* TreinoViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				3E565035292E92EF002CE866 /* ListaTreinos */,
+				3E03066D2934F7900019DA53 /* DetalhesTreino */,
+				3E0306732934FF5C0019DA53 /* NovoTreino */,
+				3E0306742934FF6D0019DA53 /* NovoExercicio */,
 			);
 			path = Treinos;
 			sourceTree = "<group>";
@@ -322,25 +369,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0306722934FD5A0019DA53 /* ExercicioViewCell.swift in Sources */,
 				587D9E6D288951F2005F9CA8 /* NovaRefeicaoViewController.swift in Sources */,
 				587D9E6628888515005F9CA8 /* DefaultTableSectionHeaderView.swift in Sources */,
 				587D9E5028884B3C005F9CA8 /* RefeicoesViewController.swift in Sources */,
 				587D9E5C28885032005F9CA8 /* Theme.swift in Sources */,
+				3E0306762934FF8E0019DA53 /* NovoExercicioViewController.swift in Sources */,
 				587D9E5728884C02005F9CA8 /* Refeicao.swift in Sources */,
 				3E565038292E9305002CE866 /* TreinosViewController.swift in Sources */,
 				587D9E5F2888575E005F9CA8 /* LogoTitleView.swift in Sources */,
 				587D9E5328884B8D005F9CA8 /* RefeicaoTableViewCell.swift in Sources */,
 				58089E5F289C35AB001F8607 /* TreinosAPI.swift in Sources */,
+				3E0306782935019E0019DA53 /* NovoTreinoViewController.swift in Sources */,
 				587D9E7428899F8B005F9CA8 /* Alert+UIViewController.swift in Sources */,
 				587D9E5A28884C20005F9CA8 /* RefeicoesAPI.swift in Sources */,
 				587D9E61288857EC005F9CA8 /* DefaultTableHeaderView.swift in Sources */,
 				587D9E34288848E7005F9CA8 /* AppDelegate.swift in Sources */,
 				58089E5D289C356A001F8607 /* Treino.swift in Sources */,
+				3E0306702934F7E60019DA53 /* DetalhesTreinoViewController.swift in Sources */,
 				587D9E7028896EFC005F9CA8 /* NovoIngredienteViewController.swift in Sources */,
 				587D9E5528884BD8005F9CA8 /* DetalhesRefeicaoViewController.swift in Sources */,
 				587D9E64288878FE005F9CA8 /* DetailsTableHeaderView.swift in Sources */,
 				587D9E36288848E7005F9CA8 /* SceneDelegate.swift in Sources */,
 				587D9E6828888E0E005F9CA8 /* IngredienteTableViewCell.swift in Sources */,
+				3E03066C2934F0C50019DA53 /* TreinoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,3 +23,17 @@ struct Treino {
     var descricao: String
     var exercicios: [Exercicio]
 }
+
+extension Treino: Detailable {
+    var symbol: String {
+        return simbolo
+    }
+    
+    var title: String {
+        return titulo
+    }
+    
+    var subtitle: String {
+        return descricao
+    }
+}
